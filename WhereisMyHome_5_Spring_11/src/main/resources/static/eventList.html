@@ -1,14 +1,3 @@
-<!-- <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8" import="java.util.*,dto.*"%>
-<%
-	String contextPath = request.getContextPath();
-UserDto userDto = (UserDto) session.getAttribute("userDto");
-int userClsf = 0;
-if (userDto != null) {
-	userClsf = Integer.parseInt(userDto.getUserClsf());
-}
-List<EventDto> list = (List) request.getAttribute("list");
-%> -->
 <!DOCTYPE html>
 
 <html>
@@ -512,8 +501,64 @@ List<EventDto> list = (List) request.getAttribute("list");
         
         getEventList();
         
-        
       };
+      
+      // 이벤트 삭제 시작
+      async function deleteEvent(id) {
+        // userEmail = document.querySelector("#userUpdateEmail").value;
+        if (confirm("삭제된 이벤트는 되돌릴 수 없습니다. 정말 삭제하시겠습니까?")) {
+
+          let fetchOptions = {
+            method: "DELETE",
+          };
+
+          let response = await fetch("/events/" + id, fetchOptions);
+          let data = await response.json(); // json => js object <= JSON.parse();
+          if (data.result == 1) {
+            // login.jsp => /jsp/login.jsp 로 페이지 이동 ( 새로운 페이지 요청 )
+            alertify.alert("Welcome!", "이벤트 삭제가 완료되었습니다.", function () {
+              alertify.message("이벤트 삭제");
+              window.location.reload();
+            });
+          } else if (data.result == -1) {
+            alert("삭제에 실패했습니다.");
+          }
+        }
+      }
+      // 이벤트 삭제 끝
+
+      document.querySelector("#btnEventRegister").onclick = function () {
+        eventRegist();
+      };
+
+      // 이벤트 등록 시작
+      async function eventRegist() {
+        eventName = document.querySelector("#eventName").value;
+        eventFrom = document.querySelector("#eventFrom").value;
+        eventTo = document.querySelector("#eventTo").value;
+
+        let urlParams = new URLSearchParams({
+          eventName: eventName,
+          eventFrom: eventFrom,
+          eventTo: eventTo,
+        });
+
+        let fetchOptions = {
+          method: "POST",
+          body: urlParams,
+        };
+
+        let response = await fetch("/events", fetchOptions);
+        let data = await response.json();
+        if (data.result == 1) {
+          alertify.alert("Welcome!", "이벤트 등록을 성공했습니다.", function () {
+            window.location.reload();
+          });
+        } else if (data.result == -1) {
+          alert("이벤트 등록 실패.");
+        }
+      }
+      // 이벤트 등록 끝
       
       // 로그인 시작
       function validate(){
@@ -578,48 +623,17 @@ List<EventDto> list = (List) request.getAttribute("list");
       		// 로그인 종료
       
       		// 회원가입 관련 시작
-      
-      		// 회원가입 페이지 생성
-//       	 	async function registerForm(){
-//    				let url = "/user/registerForm";
-   				
-//    				let fetchOptions = {
-//    					method: "POST"
-//    				}
-   				
-//    				console.log("registerForm");
-//    				let response = await fetch(url, fetchOptions);
-//    				let data = await response.json();
-   				
-//    				var mR = document.querySelector("#memberRadio");
-//    				var innerHTML = ``;
-//    				data.forEach(el =>{
-//    					console.log(el);
-//    					innerHTML += `
-// 	   				<div class="form-check" style="display: inline-block;margin-right:1rem">
-// 	   				  <input class="form-check-input" type="radio" name="memberCode" id="memberCode" value= \${el.code}>
-// 	   				  <label class="form-check-label" for="flexRadioDefault1">
-// 	   				    ` + el.codeName + `
-// 	   				  </label>
-// 	   				</div>`;
-//    				});
-   				
-//    				mR.innerHTML = innerHTML;
-//       		}
       		
       		// 실제 회원가입
       		async function regist(){
             	userName = document.querySelector("#userName").value;
                 userPassword = document.querySelector("#userPassword").value;
                 userEmail = document.querySelector("#userEmail").value;
-//                 userCode = document.querySelector("input[name='memberCode']:checked").value;
-//                 console.log(userCode);
 
                 let urlParams = new URLSearchParams ({
                     userName: userName,
                     userPassword: userPassword,
                     userEmail: userEmail,
-//                     userClsf: userCode
                 });
 
                 let fetchOptions = {
@@ -698,7 +712,7 @@ List<EventDto> list = (List) request.getAttribute("list");
             // 이벤트 리스트
             async function getEventList(){
 				
-				let aslkjaslfkj = document.getElementById("eventListBody");
+				let eventListBodyTag = document.getElementById("eventListBody");
 				
 				let url = "/events";
 				let response = await fetch(url);
@@ -714,12 +728,12 @@ List<EventDto> list = (List) request.getAttribute("list");
                     <td>${el.eventFrom}</td>
                     <td>${el.eventTo}</td>
                     <td>
-                        <button class="btn btn-danger btn-sm" id="btnEventDelete">삭제하기</button>
+                        <button class="btn btn-danger btn-sm" id="btnEventDelete" onclick="deleteEvent(${el.eventId})">삭제하기</button>
                     </td>
                 </tr>`;
    				});
    				
-   				aslkjaslfkj.innerHTML = innerHTML;
+   				eventListBodyTag.innerHTML = innerHTML;
 				
 			}
             // 이벤트 리스트 끝
@@ -848,74 +862,7 @@ List<EventDto> list = (List) request.getAttribute("list");
         crossorigin="anonymous"
       ></script>
       <script>
-        const tr = document.querySelectorAll("tr");
-
-        for (let i = 0; i < tr.length; i++) {
-          tr[i].addEventListener("click", (e) => {
-            let id = e.target.parentNode.parentNode.children[0].innerHTML;
-            deleteEvent(id);
-          });
-        }
-        // 이벤트 삭제 시작
-        async function deleteEvent(id) {
-          // userEmail = document.querySelector("#userUpdateEmail").value;
-          if (confirm("삭제된 이벤트는 되돌릴 수 없습니다. 정말 삭제하시겠습니까?")) {
-            let urlParams = new URLSearchParams({
-              eventId: id,
-            });
-
-            let fetchOptions = {
-              method: "POST",
-              body: urlParams,
-            };
-
-            let response = await fetch("<%=contextPath%>/main/eventDelete", fetchOptions);
-            let data = await response.json(); // json => js object <= JSON.parse();
-            if (data.result == "success") {
-              // login.jsp => /jsp/login.jsp 로 페이지 이동 ( 새로운 페이지 요청 )
-              alertify.alert("Welcome!", "이벤트 삭제가 완료되었습니다.", function () {
-                alertify.message("이벤트 삭제");
-                window.location.reload();
-              });
-            } else if (data.result == "fail") {
-              alert("삭제에 실패했습니다.");
-            }
-          }
-        }
-        // 이벤트 삭제 끝
-
-        document.querySelector("#btnEventRegister").onclick = function () {
-          eventRegist();
-        };
-
-        // 이벤트 등록 시작
-        async function eventRegist() {
-          eventName = document.querySelector("#eventName").value;
-          eventFrom = document.querySelector("#eventFrom").value;
-          eventTo = document.querySelector("#eventTo").value;
-
-          let urlParams = new URLSearchParams({
-            eventName: eventName,
-            eventFrom: eventFrom,
-            eventTo: eventTo,
-          });
-
-          let fetchOptions = {
-            method: "POST",
-            body: urlParams,
-          };
-
-          let response = await fetch("<%=contextPath%>/main/eventRegist", fetchOptions);
-          let data = await response.json();
-          if (data.result == "success") {
-            alertify.alert("Welcome!", "이벤트 등록을 성공했습니다.", function () {
-              window.location.reload();
-            });
-          } else if (data.result == "fail") {
-            alert("이벤트 등록 실패.");
-          }
-        }
-        // 이벤트 등록 끝
+        
       </script>
     </body>
   </html>
