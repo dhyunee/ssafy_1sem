@@ -45,8 +45,8 @@
     - UserService
     - UserController
     - dto (package)
-        -UserDto
-        -UserResultDto
+        - UserDto
+        - UserResultDto
     - UserDao
 
 - 2. admin (package)
@@ -58,8 +58,8 @@
     - EventService
     - EventController
     - dto (package)
-        -EventDto
-        -EventResultDto
+        - EventDto
+        - EventResultDto
     - EventDao
 
 - 4. house (package)
