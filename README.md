@@ -1,4 +1,27 @@
-# WhereIsMyHome_4_Algo_10조_김진호_배충현
+# WhereIsMyHome_5_Algo_11조_김송빈_배충현
+
+
+## 1. HTML
+- index.html
+- eventList.html
+<br>
+
+## 2. Packages & Java files
+
+|Package|Package|Java file|
+|----|:---:|-----|
+|admin||AdminInterceptor|
+|common||LoginInterceptor|
+|config||WebMvcConfig|
+|controller||HomeController|
+|event|dto|EventDto <br> EventResultDto|
+|event||EventController <br> EventDao <br> EventService <br> EventServiceImpl|
+|house|dto|HousetDto <br> HouseResultDto <br> PlaceDto|
+|house||HouseController <br> HouseDao <br> HouseService <br> HouseServiceImpl|
+|user|dto|UserDto <br> UserResultDto|
+|user||UserController <br> UserDao <br> UserService <br> UserServiceImpl|
+
+<br>
 
 ## 기능 List
 - 1. 메인 화면
@@ -31,43 +54,8 @@
 </br>
 ![image-5.png](./image-5.png)
 
-<br>
-<hr>
-<br>
 
-## 관통 프로젝트 문서
 
-### 1. HTML
-- index , register , login , board , event
 
-### 2. Packages & Java files
-- 1. user (package)
-    - UserService
-    - UserController
-    - dto (package)
-        - UserDto
-        - UserResultDto
-    - UserDao
-
-- 2. admin (package)
-    - AdminService
-    - AdminController
-    - AdminDao
-
-- 3. event (package)
-    - EventService
-    - EventController
-    - dto (package)
-        - EventDto
-        - EventResultDto
-    - EventDao
-
-- 4. house (package)
-    - HouseService
-    - HouseController
-    - dto (package)
-        - HouseDto
-        - HouseResultDto
-    - HouseDao
 
 
