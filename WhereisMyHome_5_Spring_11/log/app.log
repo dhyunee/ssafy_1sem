@@ -1924,3 +1924,622 @@ java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '0' for key '
 2022-11-02 17:17:07.285  INFO 16596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2022-11-02 17:17:07.453  INFO 16596 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2022-11-02 17:17:07.585  INFO 16596 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-02 17:26:05.315  INFO 16596 --- [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:26:05.479  INFO 16596 --- [RMI TCP Connection(17)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:26:05.480  INFO 16596 --- [RMI TCP Connection(17)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:26:05.483  WARN 16596 --- [RMI TCP Connection(17)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-11-02 17:26:05.486  INFO 16596 --- [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-02 17:26:05.492  INFO 16596 --- [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-02 17:26:08.973  INFO 10236 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 10236 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:26:08.974  INFO 10236 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:26:08.999  INFO 10236 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:26:08.999  INFO 10236 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:26:09.601  INFO 10236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:26:09.606  INFO 10236 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:26:09.606  INFO 10236 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:26:09.646  INFO 10236 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:26:09.646  INFO 10236 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 647 ms
+2022-11-02 17:26:09.897  INFO 10236 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:26:10.062  INFO 10236 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:26:10.082  INFO 10236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:26:10.089  INFO 10236 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.331 seconds (JVM running for 1.865)
+2022-11-02 17:26:13.145  INFO 10236 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:26:13.146  INFO 10236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:26:13.146  INFO 10236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-11-02 17:26:13.327  INFO 10236 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-02 17:26:13.456  INFO 10236 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-02 17:29:05.015  INFO 10236 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:29:05.171  INFO 10236 --- [RMI TCP Connection(11)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:29:05.172  INFO 10236 --- [RMI TCP Connection(11)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:29:05.177  WARN 10236 --- [RMI TCP Connection(11)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-11-02 17:29:05.181  INFO 10236 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-02 17:29:05.189  INFO 10236 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-02 17:29:08.672  INFO 17244 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 17244 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:29:08.673  INFO 17244 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:29:08.698  INFO 17244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:29:08.698  INFO 17244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:29:09.292  INFO 17244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:29:09.298  INFO 17244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:29:09.298  INFO 17244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:29:09.372  INFO 17244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:29:09.372  INFO 17244 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 673 ms
+2022-11-02 17:29:09.628  INFO 17244 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:29:09.787  INFO 17244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:29:09.807  INFO 17244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:29:09.813  INFO 17244 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.356 seconds (JVM running for 1.895)
+2022-11-02 17:29:13.799  INFO 17244 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:29:13.799  INFO 17244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:29:13.800  INFO 17244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-02 17:29:13.958  INFO 17244 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-02 17:29:14.092  INFO 17244 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-02 17:29:32.387  INFO 17244 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:29:32.555  INFO 17244 --- [RMI TCP Connection(8)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:29:32.556  INFO 17244 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:29:32.559  WARN 17244 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-11-02 17:29:32.563  INFO 17244 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-02 17:29:32.569  INFO 17244 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-02 17:29:36.033  INFO 15436 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 15436 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:29:36.034  INFO 15436 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:29:36.059  INFO 15436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:29:36.059  INFO 15436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:29:36.654  INFO 15436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:29:36.659  INFO 15436 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:29:36.659  INFO 15436 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:29:36.718  INFO 15436 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:29:36.718  INFO 15436 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 659 ms
+2022-11-02 17:29:36.972  INFO 15436 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:29:37.133  INFO 15436 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:29:37.153  INFO 15436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:29:37.160  INFO 15436 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.339 seconds (JVM running for 1.868)
+2022-11-02 17:29:39.008  INFO 15436 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:29:39.008  INFO 15436 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:29:39.009  INFO 15436 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-02 17:29:39.143  INFO 15436 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-02 17:29:39.276  INFO 15436 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-02 17:30:25.034  INFO 15436 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:30:25.196  INFO 15436 --- [RMI TCP Connection(10)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:30:25.197  INFO 15436 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:30:25.200  WARN 15436 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-11-02 17:30:25.204  INFO 15436 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-02 17:30:25.206  INFO 15436 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-02 17:30:28.665  INFO 11948 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 11948 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:30:28.666  INFO 11948 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:30:28.690  INFO 11948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:30:28.691  INFO 11948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:30:29.308  INFO 11948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:30:29.313  INFO 11948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:30:29.313  INFO 11948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:30:29.355  INFO 11948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:30:29.355  INFO 11948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 664 ms
+2022-11-02 17:30:29.612  INFO 11948 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:30:29.792  INFO 11948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:30:29.812  INFO 11948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:30:29.819  INFO 11948 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.367 seconds (JVM running for 1.897)
+2022-11-02 17:30:32.478  INFO 11948 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:30:32.479  INFO 11948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:30:32.479  INFO 11948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-11-02 17:30:32.610  INFO 11948 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-02 17:30:32.743  INFO 11948 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-02 17:33:20.285  INFO 11948 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:33:20.449  INFO 11948 --- [RMI TCP Connection(12)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:33:20.450  INFO 11948 --- [RMI TCP Connection(12)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:33:20.453  WARN 11948 --- [RMI TCP Connection(12)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-11-02 17:33:20.457  INFO 11948 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-02 17:33:20.463  INFO 11948 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-02 17:33:23.923  INFO 17312 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 17312 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:33:23.923  INFO 17312 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:33:23.947  INFO 17312 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:33:23.947  INFO 17312 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:33:24.560  INFO 17312 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:33:24.565  INFO 17312 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:33:24.565  INFO 17312 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:33:24.607  INFO 17312 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:33:24.607  INFO 17312 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 659 ms
+2022-11-02 17:33:24.860  INFO 17312 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:33:25.018  INFO 17312 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:33:25.038  INFO 17312 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:33:25.044  INFO 17312 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.336 seconds (JVM running for 1.864)
+2022-11-02 17:33:26.848  INFO 17312 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:33:26.848  INFO 17312 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:33:26.849  INFO 17312 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-02 17:33:27.009  INFO 17312 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-02 17:33:27.143  INFO 17312 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-02 17:34:26.643  INFO 17312 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:34:26.803  INFO 17312 --- [RMI TCP Connection(9)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:34:26.804  INFO 17312 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:34:26.807  WARN 17312 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-11-02 17:34:26.811  INFO 17312 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-02 17:34:26.814  INFO 17312 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-02 17:34:30.303  INFO 16644 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 16644 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:34:30.304  INFO 16644 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:34:30.329  INFO 16644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:34:30.329  INFO 16644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:34:30.934  INFO 16644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:34:30.939  INFO 16644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:34:30.939  INFO 16644 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:34:30.981  INFO 16644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:34:30.981  INFO 16644 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 652 ms
+2022-11-02 17:34:31.237  INFO 16644 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:34:31.404  INFO 16644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:34:31.424  INFO 16644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:34:31.431  INFO 16644 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.344 seconds (JVM running for 1.885)
+2022-11-02 17:34:35.818  INFO 16644 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:34:35.818  INFO 16644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:34:35.819  INFO 16644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-02 17:34:35.965  INFO 16644 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-02 17:34:36.097  INFO 16644 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-02 17:35:39.907  INFO 16644 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:35:40.066  INFO 16644 --- [RMI TCP Connection(9)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:35:40.067  INFO 16644 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:35:40.070  WARN 16644 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-11-02 17:35:40.074  INFO 16644 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-02 17:35:40.080  INFO 16644 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-02 17:35:43.541  INFO 16368 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 16368 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:35:43.542  INFO 16368 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:35:43.566  INFO 16368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:35:43.567  INFO 16368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:35:44.183  INFO 16368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:35:44.187  INFO 16368 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:35:44.187  INFO 16368 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:35:44.231  INFO 16368 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:35:44.231  INFO 16368 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 664 ms
+2022-11-02 17:35:44.490  INFO 16368 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:35:44.649  INFO 16368 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:35:44.669  INFO 16368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:35:44.676  INFO 16368 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.349 seconds (JVM running for 1.877)
+2022-11-02 17:35:46.416  INFO 16368 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:35:46.416  INFO 16368 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:35:46.417  INFO 16368 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-02 17:35:46.579  INFO 16368 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-02 17:35:46.711  INFO 16368 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-02 17:36:24.797  INFO 16368 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:36:24.957  INFO 16368 --- [RMI TCP Connection(9)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:36:24.958  INFO 16368 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:36:24.961  WARN 16368 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-11-02 17:36:24.965  INFO 16368 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-02 17:36:24.967  INFO 16368 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-02 17:36:28.432  INFO 16528 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 16528 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:36:28.433  INFO 16528 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:36:28.456  INFO 16528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:36:28.457  INFO 16528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:36:29.053  INFO 16528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:36:29.058  INFO 16528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:36:29.059  INFO 16528 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:36:29.105  INFO 16528 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:36:29.105  INFO 16528 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 648 ms
+2022-11-02 17:36:29.363  INFO 16528 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:36:29.521  INFO 16528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:36:29.541  INFO 16528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:36:29.547  INFO 16528 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.334 seconds (JVM running for 1.859)
+2022-11-02 17:36:35.639  INFO 16528 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:36:35.639  INFO 16528 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:36:35.639  INFO 16528 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-11-02 17:36:35.822  INFO 16528 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-02 17:36:35.952  INFO 16528 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-02 17:38:32.813  INFO 16528 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:38:32.980  INFO 16528 --- [RMI TCP Connection(10)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:38:32.981  INFO 16528 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:38:32.984  WARN 16528 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-11-02 17:38:32.987  INFO 16528 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-02 17:38:32.996  INFO 16528 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-02 17:38:36.488  INFO 16016 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 16016 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:38:36.489  INFO 16016 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:38:36.514  INFO 16016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:38:36.514  INFO 16016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:38:37.116  INFO 16016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:38:37.120  INFO 16016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:38:37.121  INFO 16016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:38:37.173  INFO 16016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:38:37.174  INFO 16016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 660 ms
+2022-11-02 17:38:37.442  INFO 16016 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:38:37.611  INFO 16016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:38:37.632  INFO 16016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:38:37.639  INFO 16016 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.363 seconds (JVM running for 1.904)
+2022-11-02 17:38:39.562  INFO 16016 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:38:39.562  INFO 16016 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:38:39.563  INFO 16016 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-02 17:38:39.732  INFO 16016 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-02 17:38:39.868  INFO 16016 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-02 17:39:22.773  INFO 16016 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:39:22.945  INFO 16016 --- [RMI TCP Connection(10)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:39:22.946  INFO 16016 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:39:22.949  WARN 16016 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-11-02 17:39:22.952  INFO 16016 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-02 17:39:22.955  INFO 16016 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-02 17:39:26.397  INFO 17252 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 17252 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:39:26.397  INFO 17252 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:39:26.422  INFO 17252 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:39:26.422  INFO 17252 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:39:27.026  INFO 17252 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:39:27.031  INFO 17252 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:39:27.031  INFO 17252 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:39:27.093  INFO 17252 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:39:27.094  INFO 17252 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 672 ms
+2022-11-02 17:39:27.357  INFO 17252 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:39:27.534  INFO 17252 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:39:27.554  INFO 17252 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:39:27.560  INFO 17252 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.376 seconds (JVM running for 1.893)
+2022-11-02 17:39:31.971  INFO 17252 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:39:31.972  INFO 17252 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:39:31.972  INFO 17252 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-11-02 17:39:32.101  INFO 17252 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-02 17:39:32.235  INFO 17252 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-02 17:41:44.484  INFO 17252 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:41:44.659  INFO 17252 --- [RMI TCP Connection(10)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:41:44.660  INFO 17252 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:41:44.663  WARN 17252 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-11-02 17:41:44.668  INFO 17252 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-02 17:41:44.676  INFO 17252 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-02 17:41:48.150  INFO 14512 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 14512 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:41:48.151  INFO 14512 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:41:48.174  INFO 14512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:41:48.175  INFO 14512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:41:48.790  INFO 14512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:41:48.795  INFO 14512 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:41:48.796  INFO 14512 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:41:48.837  INFO 14512 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:41:48.837  INFO 14512 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 662 ms
+2022-11-02 17:41:49.094  INFO 14512 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:41:49.254  INFO 14512 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:41:49.274  INFO 14512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:41:49.281  INFO 14512 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.346 seconds (JVM running for 1.875)
+2022-11-02 17:41:55.582  INFO 14512 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:41:55.583  INFO 14512 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:41:55.583  INFO 14512 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-11-02 17:42:27.349  INFO 14512 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:42:27.499  INFO 14512 --- [RMI TCP Connection(10)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:42:27.499  INFO 14512 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:42:30.991  INFO 15800 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 15800 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:42:30.992  INFO 15800 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:42:31.016  INFO 15800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:42:31.017  INFO 15800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:42:31.630  INFO 15800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:42:31.635  INFO 15800 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:42:31.635  INFO 15800 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:42:31.689  INFO 15800 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:42:31.690  INFO 15800 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 673 ms
+2022-11-02 17:42:31.951  INFO 15800 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:42:32.115  INFO 15800 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:42:32.135  INFO 15800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:42:32.143  INFO 15800 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.362 seconds (JVM running for 1.893)
+2022-11-02 17:42:33.111  INFO 15800 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:42:33.111  INFO 15800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:42:33.112  INFO 15800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-02 17:48:28.626  INFO 15800 --- [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:48:28.795  INFO 15800 --- [RMI TCP Connection(15)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:48:28.797  INFO 15800 --- [RMI TCP Connection(15)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:48:32.282  INFO 16608 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 16608 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:48:32.283  INFO 16608 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:48:32.308  INFO 16608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:48:32.308  INFO 16608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:48:32.907  INFO 16608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:48:32.911  INFO 16608 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:48:32.912  INFO 16608 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:48:32.959  INFO 16608 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:48:32.960  INFO 16608 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 651 ms
+2022-11-02 17:48:33.217  INFO 16608 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:48:33.388  INFO 16608 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:48:33.407  INFO 16608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:48:33.414  INFO 16608 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.348 seconds (JVM running for 1.885)
+2022-11-02 17:49:20.997  INFO 16608 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:49:21.158  INFO 16608 --- [RMI TCP Connection(9)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:49:24.633  INFO 4728 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 4728 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:49:24.634  INFO 4728 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:49:24.659  INFO 4728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:49:24.659  INFO 4728 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:49:25.267  INFO 4728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:49:25.272  INFO 4728 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:49:25.273  INFO 4728 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:49:25.323  INFO 4728 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:49:25.323  INFO 4728 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 664 ms
+2022-11-02 17:49:25.581  INFO 4728 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:49:25.745  INFO 4728 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:49:25.765  INFO 4728 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:49:25.772  INFO 4728 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.356 seconds (JVM running for 1.894)
+2022-11-02 17:49:27.480  INFO 4728 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:49:27.480  INFO 4728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:49:27.481  INFO 4728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-02 17:49:52.186  INFO 4728 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:49:52.378  INFO 4728 --- [RMI TCP Connection(8)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:49:52.379  INFO 4728 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:49:55.954  INFO 17088 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 17088 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:49:55.955  INFO 17088 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:49:55.980  INFO 17088 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:49:55.980  INFO 17088 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:49:56.582  INFO 17088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:49:56.587  INFO 17088 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:49:56.587  INFO 17088 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:49:56.627  INFO 17088 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:49:56.627  INFO 17088 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 646 ms
+2022-11-02 17:49:56.881  INFO 17088 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:49:57.059  INFO 17088 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:49:57.079  INFO 17088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:49:57.085  INFO 17088 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.345 seconds (JVM running for 1.878)
+2022-11-02 17:49:58.931  INFO 17088 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:49:58.931  INFO 17088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:49:58.932  INFO 17088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-02 17:50:31.625  INFO 17088 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:50:31.792  INFO 17088 --- [RMI TCP Connection(9)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:50:31.793  INFO 17088 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:50:35.281  INFO 15052 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 15052 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:50:35.282  INFO 15052 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:50:35.309  INFO 15052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:50:35.309  INFO 15052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:50:35.923  INFO 15052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:50:35.928  INFO 15052 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:50:35.928  INFO 15052 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:50:35.975  INFO 15052 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:50:35.975  INFO 15052 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 666 ms
+2022-11-02 17:50:36.238  INFO 15052 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:50:36.418  INFO 15052 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:50:36.438  INFO 15052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:50:36.445  INFO 15052 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.388 seconds (JVM running for 1.926)
+2022-11-02 17:50:37.070  INFO 15052 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:50:37.070  INFO 15052 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:50:37.071  INFO 15052 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-02 17:50:37.138  INFO 15052 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-02 17:50:37.275  INFO 15052 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-02 17:51:13.030  INFO 15052 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:51:13.200  INFO 15052 --- [RMI TCP Connection(9)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:51:13.201  INFO 15052 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:51:13.205  WARN 15052 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-11-02 17:51:13.209  INFO 15052 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-02 17:51:13.211  INFO 15052 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-02 17:51:16.688  INFO 17272 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 17272 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:51:16.689  INFO 17272 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:51:16.714  INFO 17272 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:51:16.715  INFO 17272 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:51:17.316  INFO 17272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:51:17.321  INFO 17272 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:51:17.321  INFO 17272 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:51:17.376  INFO 17272 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:51:17.376  INFO 17272 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 661 ms
+2022-11-02 17:51:17.637  INFO 17272 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:51:17.805  INFO 17272 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:51:17.824  INFO 17272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:51:17.832  INFO 17272 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.358 seconds (JVM running for 1.9)
+2022-11-02 17:51:21.537  INFO 17272 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:51:21.537  INFO 17272 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:51:21.537  INFO 17272 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-11-02 17:51:21.605  INFO 17272 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-02 17:51:21.743  INFO 17272 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-02 17:51:28.450  INFO 17272 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:51:28.635  INFO 17272 --- [RMI TCP Connection(8)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:51:28.636  INFO 17272 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:51:28.642  WARN 17272 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-11-02 17:51:28.646  INFO 17272 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-02 17:51:28.652  INFO 17272 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-02 17:51:48.424  INFO 8176 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 8176 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:51:48.425  INFO 8176 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:51:48.449  INFO 8176 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:51:48.450  INFO 8176 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:51:49.065  INFO 8176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:51:49.070  INFO 8176 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:51:49.070  INFO 8176 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:51:49.110  INFO 8176 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:51:49.110  INFO 8176 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 660 ms
+2022-11-02 17:51:49.371  INFO 8176 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:51:49.535  INFO 8176 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:51:49.555  INFO 8176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:51:49.562  INFO 8176 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.354 seconds (JVM running for 1.893)
+2022-11-02 17:51:53.308  INFO 8176 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:51:53.309  INFO 8176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:51:53.309  INFO 8176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-11-02 17:51:53.399  INFO 8176 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-02 17:51:53.538  INFO 8176 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-02 17:53:33.973  INFO 8176 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:53:34.140  INFO 8176 --- [RMI TCP Connection(10)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:53:34.141  INFO 8176 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:53:34.144  WARN 8176 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-11-02 17:53:34.148  INFO 8176 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-02 17:53:34.156  INFO 8176 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-02 17:53:37.655  INFO 14380 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 14380 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:53:37.656  INFO 14380 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:53:37.682  INFO 14380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:53:37.682  INFO 14380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:53:38.286  INFO 14380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:53:38.291  INFO 14380 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:53:38.291  INFO 14380 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:53:38.331  INFO 14380 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:53:38.331  INFO 14380 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 648 ms
+2022-11-02 17:53:38.587  INFO 14380 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:53:38.749  INFO 14380 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:53:38.769  INFO 14380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:53:38.776  INFO 14380 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.336 seconds (JVM running for 1.883)
+2022-11-02 17:53:44.629  INFO 14380 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:53:44.629  INFO 14380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:53:44.629  INFO 14380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-11-02 17:53:44.708  INFO 14380 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-02 17:53:44.858  INFO 14380 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-02 17:54:15.711  INFO 14380 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:54:15.874  INFO 14380 --- [RMI TCP Connection(10)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:54:15.875  INFO 14380 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:54:15.879  WARN 14380 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-11-02 17:54:15.883  INFO 14380 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-02 17:54:15.890  INFO 14380 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-02 17:54:19.359  INFO 15460 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 15460 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:54:19.360  INFO 15460 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:54:19.385  INFO 15460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:54:19.385  INFO 15460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:54:19.985  INFO 15460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:54:19.991  INFO 15460 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:54:19.991  INFO 15460 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:54:20.031  INFO 15460 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:54:20.031  INFO 15460 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 646 ms
+2022-11-02 17:54:20.296  INFO 15460 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:54:20.464  INFO 15460 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:54:20.485  INFO 15460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:54:20.491  INFO 15460 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.348 seconds (JVM running for 1.878)
+2022-11-02 17:54:22.072  INFO 15460 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:54:22.072  INFO 15460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:54:22.073  INFO 15460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-02 17:54:23.046  INFO 15460 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-02 17:54:23.180  INFO 15460 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-02 17:55:30.037  INFO 15460 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-11-02 17:55:30.209  INFO 15460 --- [RMI TCP Connection(9)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-02 17:55:30.210  INFO 15460 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-02 17:55:30.213  WARN 15460 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-11-02 17:55:30.217  INFO 15460 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-02 17:55:30.224  INFO 15460 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-02 17:55:33.711  INFO 9136 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Starting WhereisMyHome5Spring11Application using Java 1.8.0_192 on DESKTOP-KVCQHCD with PID 9136 (C:\SSAFY\spring\WhereisMyHome_5_Spring_11\bin\main started by SSAFY in C:\SSAFY\spring\WhereisMyHome_5_Spring_11)
+2022-11-02 17:55:33.711  INFO 9136 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : No active profile set, falling back to 1 default profile: "default"
+2022-11-02 17:55:33.736  INFO 9136 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-02 17:55:33.736  INFO 9136 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-02 17:55:34.340  INFO 9136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-02 17:55:34.345  INFO 9136 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-02 17:55:34.345  INFO 9136 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-02 17:55:34.386  INFO 9136 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-02 17:55:34.386  INFO 9136 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 650 ms
+2022-11-02 17:55:34.643  INFO 9136 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2022-11-02 17:55:34.808  INFO 9136 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-02 17:55:34.828  INFO 9136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-02 17:55:34.834  INFO 9136 --- [restartedMain] c.m.m.WhereisMyHome5Spring11Application  : Started WhereisMyHome5Spring11Application in 1.337 seconds (JVM running for 1.868)
+2022-11-02 17:55:37.444  INFO 9136 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-02 17:55:37.444  INFO 9136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-02 17:55:37.445  INFO 9136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-11-02 17:55:37.615  INFO 9136 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-02 17:55:37.755  INFO 9136 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
