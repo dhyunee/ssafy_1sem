@@ -16,8 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.mycom.myhouse.user.dto.UserDto;
 import com.mycom.myhouse.user.dto.UserResultDto;
 
-
-
 @RestController
 public class UserController {
 	
@@ -64,5 +62,9 @@ public class UserController {
 		}
 	}
 	
+	@GetMapping("users/{userEmail}")
+	private UserDto getUser(@PathVariable String userEmail) {
+		return userService.getUser(userEmail);
+	}
 	
 }

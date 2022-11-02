@@ -10,4 +10,5 @@ public interface UserDao {
 	public int updateUser(UserDto userDto);
 	public int deleteUser(String userEmail);
 	public UserDto loginUser(String userEmail);
+	public UserDto getUser(String userEmail);
 }

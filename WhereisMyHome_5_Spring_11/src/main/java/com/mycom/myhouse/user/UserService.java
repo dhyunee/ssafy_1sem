@@ -8,4 +8,5 @@ public interface UserService {
 	UserResultDto updateUser(UserDto userDto);
 	UserResultDto deleteUser(String userEmail);
 	UserDto loginUser(UserDto dto);
+	UserDto getUser(String userEmail);
 }

@@ -55,6 +55,11 @@ public class UserServiceImpl implements UserService{
 		}
 		return null;
 	}
+
+	@Override
+	public UserDto getUser(String userEmail) {
+		return userDao.getUser(userEmail);
+	}
 	
 	
 }

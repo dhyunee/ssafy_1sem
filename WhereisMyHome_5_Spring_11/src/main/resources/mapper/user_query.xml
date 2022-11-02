@@ -24,4 +24,10 @@
     	  WHERE user_email=#{userEmail}
     </select>
     
+    <select id="getUser" parameterType="string" resultType="com.mycom.myhouse.user.dto.UserDto">
+    	SELECT user_seq,user_name,user_password,user_email,user_register_date,user_clsf
+    	  FROM users
+    	  WHERE user_email=#{userEmail}
+    </select>
+    
 </mapper>

@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.mycom.myhouse.user.UserService;
 import com.mycom.myhouse.user.dto.UserDto;
@@ -41,7 +42,8 @@ public class HomeController {
 			
 			//html로 client 를 구헝하므로 html에서 server sessioni에 접근X
 			//로그인 성공 직후에 client에게 client가 필요로 하는 사용자 정보를 내려주어야 한다.
-			map.put("useName", userDto.getUserName());
+			map.put("userEmail", userDto.getUserEmail());
+			map.put("userClsf", Integer.toString(userDto.getUserClsf()));
 	
 			return new ResponseEntity<Map<String, String>>(map, HttpStatus.OK);
 		}
@@ -52,9 +54,12 @@ public class HomeController {
 	
 	
 	@GetMapping(value = "/logout")
-	public String logout(HttpSession session) {
+	@ResponseBody
+	public Map<String, String> logout(HttpSession session) {
 		session.invalidate(); // 세션 초기화
-		return "redirect:/";
+		Map<String, String> map = new HashMap<>();
+		map.put("result", "success");
+		return map;
 	}
 	
 	
