@@ -30,3 +30,44 @@
 ![image-4.png](./image-4.png)
 </br>
 ![image-5.png](./image-5.png)
+
+<br>
+<hr>
+<br>
+
+## 관통 프로젝트 문서
+
+### 1. HTML
+- index , register , login , board , event
+
+### 2. Packages & Java files
+- 1. user (package)
+    - UserService
+    - UserController
+    - dto (package)
+        - UserDto
+        - UserResultDto
+    - UserDao
+
+- 2. admin (package)
+    - AdminService
+    - AdminController
+    - AdminDao
+
+- 3. event (package)
+    - EventService
+    - EventController
+    - dto (package)
+        - EventDto
+        - EventResultDto
+    - EventDao
+
+- 4. house (package)
+    - HouseService
+    - HouseController
+    - dto (package)
+        - HouseDto
+        - HouseResultDto
+    - HouseDao
+
+
