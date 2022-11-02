@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mycom.myhouse.house.HouseDao"> <!-- @Mapper annotation 있는 dao -->
+	
+	<select id="getSido" resultType="com.mycom.myhouse.house.dto.PlaceDto">
+		SELECT *
+		FROM sido_code
+	</select>
+	
+	<select id="getGugun" parameterType="string" resultType="com.mycom.myhouse.house.dto.PlaceDto">
+		SELECT *
+		FROM gugun_code
+		WHERE sido_code = #{sido}
+	</select>
+	
+	<select id="getDong" parameterType="string" resultType="com.mycom.myhouse.house.dto.PlaceDto">
+		SELECT *
+		FROM dong_code
+		WHERE gugun_code = #{gugun}
+	</select>
+	
+<!-- 	<select id="getHouse" parameterType="int" resultType="com.mycom.myhouse.house.dto.HouseDto"> -->
+<!-- 		SELECT event_id, event_name, event_from, event_to -->
+<!-- 		FROM event -->
+<!-- 		WHERE event_id = #{event_id} -->
+<!-- 	</select> -->
+	
+	<select id="getHouseList" parameterType="string" resultType="com.mycom.myhouse.house.dto.HouseDto">
+		SELECT *
+		FROM ( 
+			SELECT h.no, h.AptName, h.floor, h.area, h.dong, h.dealAmount, h.code as guncode, d.code as dongcode
+			FROM dong_code d, housedeal h
+			WHERE d.name = h.dong ) as t
+		WHERE dongcode = #{dong};
+	</select>
+	
+</mapper>

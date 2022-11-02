@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mycom.myhouse.user.UserDao">
+   
+    <insert id="insertUser" parameterType="com.mycom.myhouse.user.dto.UserDto">
+    	INSERT INTO users( user_name, user_password, user_email, user_register_date,user_clsf )
+    	VALUES ( #{userName}, #{userPassword}, #{userEmail}, now() ,#{userClsf} )
+    </insert>
+    
+    <update id="updateUser" parameterType="com.mycom.myhouse.user.dto.UserDto">
+    	UPDATE users SET user_password = #{userPassword}
+    	 WHERE user_email= #{userEmail}
+    </update>
+    
+    <delete id="deleteUser" parameterType="string">
+    	DELETE FROM user
+    	 WHERE user_email=#{userEmail}
+    </delete>
+    
+    <select id="loginUser" parameterType="string" resultType="com.mycom.myhouse.user.dto.UserDto">
+    	SELECT user_seq,user_name,user_password,user_email,user_register_date,user_clsf
+    	  FROM users
+    	  WHERE user_email=#{userEmail}
+    </select>
+    
+</mapper>
